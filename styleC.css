@@ -139,7 +139,7 @@ body{
 
 .mainList {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
     columns: 2;
     column-gap: 10%;
     display:inline-flexbox;
