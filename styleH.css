@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+ 
+/* Banner */
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    display: flex;
+    user-select: none;
+}
+
+
+.logo img{
+    width: 50px;
+    height: auto;
+}
+
+.navg a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    display: inline-block;
+}
+.navg .navbtn{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em ;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 40px;
+    padding-right: 35px;
+}
+
+.navbtn:hover{
+    border: 1px solid #fff;
+    background: rgb(156, 191, 245);
+    transition: 1s;
+}
+
+
+
+.navg a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navg a:hover::after{
+    width: 100%;
+
+}
+
+/* background */
+
+.heading{
+    min-height: 100vh ;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/736x/9a/87/72/9a87722dd000aea68f6fa73bfecd2cee.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.textbox{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.textbox h1{
+    font-size: 63px;  
+    text-shadow: 0 10px 5px black;
+    
+}
+
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    counter-reset: #fff;
+}
+
+
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+    /* width: 130px;
+    height: 50px; */
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em ;
+    color:#fff;
+    font-weight: 500;
+    padding: 12px;
+    position: relative;
+}
+
+.btn2:hover{
+    border: 1px solid #19a9d8;
+    background:  rgb(156, 191, 245);
+    transition: 1s;
+}
